@@ -28,7 +28,7 @@ function addThemeSupport() {
 
 add_action('after_setup_theme', 'addThemeSupport');
 
-
+//hide admin bar
 if ( ! current_user_can( 'manage_options' ) ) {
     show_admin_bar( false );
 }
